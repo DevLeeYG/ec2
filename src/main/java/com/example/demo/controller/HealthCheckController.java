@@ -15,6 +15,10 @@ public class HealthCheckController {
 	public ResponseEntity healthCheck() {
 		return new ResponseEntity("success", HttpStatus.OK);
 	}
+	@GetMapping("/health/check")
+	public ResponseEntity healthCheck1() {
+		return new ResponseEntity("success", HttpStatus.OK);
+	}
 	@GetMapping("favicon.ico") @ResponseBody
 	public void returnNoFavicon() { }
 
